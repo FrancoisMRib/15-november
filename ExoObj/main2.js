@@ -3,11 +3,13 @@ class Maison {
     nom;
     longueur;
     largeur;
+    etage;
     //Constructeur
-    constructor(newNom, newLongueur, newLargeur){
+    constructor(newNom, newLongueur, newLargeur, newEtage){
         this.nom = newNom;
         this.longueur = newLongueur;
         this.largeur = newLargeur;
+        this.etage = newEtage;
     }
     //méthode
     perimetre(){        
@@ -15,10 +17,10 @@ class Maison {
     }
 
     surface() {
-        console.log("La maison a une surface de", this.longueur*this.largeur, "m2.")
+        console.log("La maison a une surface de", this.longueur*this.largeur*this.etage, "m2.")
     }
 }
-const villa = new Maison('villa', 9, 13);
+const villa = new Maison('villa', 9, 13, 3);
 
 console.log(villa);
 villa.perimetre();
