@@ -87,8 +87,8 @@ function afficherXeno(objet) {
 } 
 
 function profil(objet) {
-    if(objet == usersHuman) {
-        return afficherHumain;
+    if(objet.type == "humain") {
+        afficherHumain(objet);
     } else if (objet == usersPet) {
         console.log(afficherAnimal);
     } else if (objet == usersXeno) {
