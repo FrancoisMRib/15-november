@@ -88,11 +88,19 @@ function afficherXeno(objet) {
 
 function profil(objet) {
     if(objet.type == "humain") {
+<<<<<<< HEAD
         afficherHumain (objet);
     } else if (objet.type == "Animal de compagnie") {
         afficherAnimal(objet);
     } else if (objet.type == "Xeno") {
         afficherXeno(objet);
+=======
+        afficherHumain(objet);
+    } else if (objet == usersPet) {
+        console.log(afficherAnimal);
+    } else if (objet == usersXeno) {
+        console.log(afficherXeno);
+>>>>>>> 09cea660d4ae30833dcba10bb9c58f73f9030271
     } else {
         console.log("Type de profil non existant")
     }
