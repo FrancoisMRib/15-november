@@ -67,7 +67,7 @@ tabData.push(usersXeno);
 console.log(tabData);
 
 function afficherHumain(objet) {
-    console.log(objet[1]);
+    console.log(objet.name);
     console.log(objet.email);
     console.log(objet.age);
 } 
@@ -87,12 +87,12 @@ function afficherXeno(objet) {
 } 
 
 function profil(objet) {
-    if(objet == usersHuman) {
-        return afficherHumain;
-    } else if (objet == usersPet) {
-        console.log(afficherAnimal);
-    } else if (objet == usersXeno) {
-        console.log(afficherXeno);
+    if(objet.type == "humain") {
+        afficherHumain (objet);
+    } else if (objet.type == "Animal de compagnie") {
+        afficherAnimal(objet);
+    } else if (objet.type == "Xeno") {
+        afficherXeno(objet);
     } else {
         console.log("Type de profil non existant")
     }
