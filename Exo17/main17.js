@@ -68,7 +68,7 @@ class CompteeBancaire{
     }
     debit(montant){
         if(this.solde < montant){
-           throw new Error("les fonds ne sont pas disponible"); 
+           throw new Error("les fonds ne sont pas disponibles"); 
         }
         if(montant < 0){
             throw new Error("Un retrait négatif est impossible");  

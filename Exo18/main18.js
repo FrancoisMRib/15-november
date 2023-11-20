@@ -29,6 +29,8 @@ XXX = 10%
 */
 
 class Pme {
+    solde;
+    salaires;
     constructor(nom, nbrSalaries, revenus, fraisFixes, fraisAchats) {
         this.nom = nom;
         this.revenus = revenus;
@@ -36,6 +38,13 @@ class Pme {
         this.fraisAchats = fraisAchats;
         this.fraisFixes = fraisFixes;
     }
+    bilan() {
+        this.nbrSalaries.forEach(element => {
+            this.salaires += element.calculSalaire();
+        });
+        this.solde = this.revenus - this.fraisFixes - this.fraisAchats
+    }
+
 }
 
 class Employee {
