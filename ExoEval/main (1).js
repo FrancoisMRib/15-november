@@ -73,7 +73,7 @@ function afficherHumain(objet) {
     console.log(objet.email);
     console.log(objet.age);
 } 
-//on peut aussi faire pour celui-là comme pour les autres : 
+//CORRECTION - on peut aussi faire pour celui-là comme pour les autres : 
 function afficherHumain2(objet) {
     const affichage =
     `------------------------------------
